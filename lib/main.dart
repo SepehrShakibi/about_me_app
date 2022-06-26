@@ -64,7 +64,6 @@ class MyApp extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.fromLTRB(50, 0, 50, 10),
-
                     child: Text(
                       """Sepehr Shakibi is an electrical engineer and android devoloper. He programs in C, Python, Java, Kotlin, and Dart; He develops Android platform software with Kotlin and Dart languages and is interested in working with high-level languages.
 He has passed courses in C language -especially microcontrollers -, AVR and ARM-STM32 microcontrollers, design of printed circuit fibers by the Altium Designer software, hardware implementation skills with microcontrollers, and Python programming language in the Vocational and Technical academy of “Grooh-e amn-e rahavard danesh.” 
@@ -77,27 +76,28 @@ He has passed courses in C language -especially microcontrollers -, AVR and ARM-
                           color: Colors.white),
                     ),
                   ),
-                  Container(
-                      margin: EdgeInsets.fromLTRB(50, 0, 50, 17),
-                      child:Row(
-                        children: <Widget>[
-                          Icon(Icons.mail_outline  ,color: Color.fromRGBO(
-                              234, 212, 190, 1.0),),
-                          Text(" SepehrShakibi2@gmail.com",style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontFamily: "CharisSIL"
-                          ),),
+                  Card(
+                    margin: EdgeInsets.fromLTRB(45, 0, 45, 17),
+                    child: ListTile(
 
-                        ],
-                      )
-
-                  )
+                      leading: Icon(
+                        Icons.mail_outline,
+                        color: Colors.teal.shade700,
+                        size: 34,
+                      ),
+                      title: Text(
+                        " SepehrShakibi2@gmail.com",
+                        style: TextStyle(
+                            color: Colors.teal,
+                            fontSize: 16,
+                            fontFamily: "CharisSIL"),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
           ),
-
         ),
       ),
     );
